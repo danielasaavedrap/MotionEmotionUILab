@@ -11,6 +11,6 @@ export type UiMode = 'light' | 'dark';
 export interface MotionEmotionState {
   Emotion: EmotionId;
   uiMode: UiMode;
-  setEmotion: (_e: EmotionId) => void;
-  setUiMode: (_m: UiMode) => void;
+  setEmotion: (e: EmotionId) => void;
+  setUiMode: (m: UiMode) => void;
 }

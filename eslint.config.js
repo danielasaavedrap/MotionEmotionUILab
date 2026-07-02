@@ -28,16 +28,17 @@ export default [
     rules: {
       // Base JS (equivalente a eslint:recommended)
       ...js.configs.recommended.rules,
-
+      
       // React moderno (Vite)
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
-
+      
       // Hooks (esto SÍ importa)
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
-
+      
       // TypeScript (seguridad, no castigo)
+      "no-unused-vars": "off",
       '@typescript-eslint/no-unused-vars': [
         'warn',
         { argsIgnorePattern: '^_' },
